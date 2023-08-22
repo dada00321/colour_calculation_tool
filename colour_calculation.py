@@ -220,6 +220,3 @@ def CIEDE2000(rgb_1, rgb_2):
 	
 	dE_00 = math.sqrt(f_L**2 + f_C**2 + f_H**2 + R_T * f_C * f_H)
 	return dE_00
-
-de_00 = CIEDE2000((241,214,147), (248,236,202))
-print(f"實際 icon 顏色和輸入 L*a*b* 到線上選色網站呈現顏色的色差: {de_00}")
